@@ -1,5 +1,6 @@
 {
   "name": "mobasher-pwa",
+  "homepage": "https://fhagh.github.io/mobasher-pwa"
   "version": "0.1.0",
   "private": true,
   "dependencies": {
