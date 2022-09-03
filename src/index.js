@@ -1,24 +1,32 @@
 import React from 'react';
-import './App.css';
-import 'primeflex/primeflex.css';
-import 'primeflex/primeflex.scss';
-import HomeRoot from './pages/home/HomeRoot'
-import Login from './pages/login'
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+import reportWebVitals from './reportWebVitals';
+import "primereact/resources/themes/saga-orange/theme.css";
+import "primereact/resources/primereact.min.css";    
+import 'primeicons/primeicons.css';
+import { BrowserRouter } from 'react-router-dom';
+import './font/farsi/BMitra.ttf'
 
 
-function App() {
-  return (
-    < >
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+);
 
-        <Routes>
-          <Route path="/" element={<Login/>}/>
-          <Route path="home" element={<HomeRoot/>}/>
-        </Routes>
-   
-      
-    </>
-  );
-}
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://cra.link/PWA
+serviceWorkerRegistration.register();
 
-export default App;
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
+
