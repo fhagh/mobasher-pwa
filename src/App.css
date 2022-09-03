@@ -1,0 +1,62 @@
+body,h1,h2,h3,h4,h5,h6,span,a,p,div,input,option,figcaption,li,ul,label
+{
+font-family: "BMitra" !important;
+}
+
+
+.App-header {
+  background-color: #d33f2b;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  font-size: 22px;
+  padding-right: 1rem;
+}
+
+.App-header-menu{
+  background-image: url('./rectangle_860.png');
+
+}
+
+.App-footer{
+  height: 2rem;
+  background-color: dimgrey;
+  border-radius: 15px;
+}
+
+.home{
+  height: 35rem
+}
+
+.login{
+  background-image: url('./pic/mask_group_24.png');
+}
+
+.p-inputtext{
+  background: 0 !important;
+  color: white !important;
+  border-bottom: white;
+  border-top: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  
+}
+
+inputtext:focus, input:focus{
+    box-shadow: none !important;
+}
+
+.p-password-input {
+  width: 12rem;
+  }
+
+  .input-group {
+    float: right;
+}
+ 
+
+  
